@@ -1,0 +1,15 @@
+# >100 MB (GitHub limit) and duplicate of data/reference_jayb/
+all_annotated_images.zip
+# duplicate of Contact angle/
+Contact angle.zip
+# macOS zip metadata
+__MACOSX/
+._*
+.DS_Store
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+# scratch / debug images
+outputs/_scratch/

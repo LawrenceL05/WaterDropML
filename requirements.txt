@@ -1,0 +1,10 @@
+numpy>=1.24
+scipy>=1.10
+opencv-python>=4.8
+scikit-image>=0.21
+pandas>=2.0
+matplotlib>=3.7
+# U-Net stage (next step):
+# torch>=2.2
+# segmentation-models-pytorch>=0.3
+# albumentations>=1.4
