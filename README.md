@@ -11,37 +11,9 @@ the next version.
 
 ## 1. Workflow overview
 
-```
- raw Keyence image (.jpg, substrate vertical on the right)
-        │
-        ▼
- ① Orient      rotate 90° clockwise → substrate horizontal, droplet on top
-        │
-        ▼
- ② Baseline    find the substrate line (thin bright ridge) with RANSAC,
-                then deskew so it is perfectly horizontal.
-                Everything below it is mirror reflection and is ignored.
-        │
-        ▼
- ③ Segment     half-resolution gradient map → strong-edge pixels
-                → group sitting on the baseline → convex hull (first guess)
-                → GrabCut refinement → droplet mask
-        │
-        ▼
- ④ Profile     row-by-row left/right edge + column-by-column top edge
-        │
-        ├──► ⑤a Circle fit   (spherical cap) → theta_circle   ← primary number
-        └──► ⑤b Tangent fit  (quadratic near each contact point) → theta_left / theta_right
-        │
-        ▼
- ⑥ Outputs     outputs/baseline_angles.csv  (angles + metadata + QC notes)
-                outputs/overlays/*.jpg       (visual check per image)
-                data/masks_auto/*_mask.png   (pseudo-labels for U-Net)
-                data/masks_auto/*_upright.jpg (matching rotated/deskewed images)
-        │
-        ▼
- ⑦ Compare     outputs/comparison_vs_jayb.csv (vs. JayB's ChatGPT-assisted angles)
-```
+![WaterDropML workflow from Keyence image to circle and tangent contact-angle estimates](docs/diagrams/01-measurement-workflow.svg)
+
+[Editable Excalidraw source](docs/diagrams/01-measurement-workflow.excalidraw)
 
 ### Why each step exists
 
@@ -59,33 +31,19 @@ the next version.
 
 ## 2. Repository layout
 
-```
-WaterDropML/
-├── Contact angle/            # original images from JayB (incl. Test/ calibration shots)
-├── discription.png           # screenshot of JayB's naming-convention message
-├── data/
-│   ├── raw/                  # the 59 measurement images (copied from Contact angle/)
-│   ├── index.csv             # metadata parsed from filenames
-│   ├── reference_jayb/       # JayB's annotated images + jayb_angles.csv
-│   └── masks_auto/           # pseudo-label masks + upright images
-├── src/
-│   ├── dataset.py            # filename → metadata index
-│   ├── contact_angle.py      # the classical pipeline
-│   └── run_baseline.py       # batch runner
-├── notebooks/
-├── outputs/
-│   ├── baseline_angles.csv
-│   ├── comparison_vs_jayb.csv
-│   └── overlays/
-├── requirements.txt
-└── README.md
-```
+![WaterDropML repository map showing inputs, Python scripts, and generated results](docs/diagrams/02-repository-map.svg)
+
+[Editable Excalidraw source](docs/diagrams/02-repository-map.excalidraw)
 
 `all_annotated_images.zip` and `Contact angle.zip` are not in git. The first is
 over GitHub's 100 MB file limit, and both are just zipped copies of folders that
 are already included.
 
 ### Filename convention (from JayB)
+
+![Annotated example of a droplet filename with date, condition and time, droplet, magnification, and shot fields](docs/diagrams/03-filename-key.svg)
+
+[Editable Excalidraw source](docs/diagrams/03-filename-key.excalidraw)
 
 `YYYYMMDD_<A|B><t>_<droplet>_<mag>[_<shot>].jpg`
 
@@ -138,6 +96,10 @@ python src/run_baseline.py --only A3_1_30  # just one image or a group (updates 
 
 ### 3.5 Check the results (do not skip this)
 
+![Contact-angle geometry and review checklist, with example values from A3_1_30](docs/diagrams/04-contact-angle-and-qc.svg)
+
+[Editable Excalidraw source](docs/diagrams/04-contact-angle-and-qc.excalidraw)
+
 Open `outputs/overlays/<name>_overlay.jpg` for each image:
 
 | Colour | Meaning |
@@ -157,6 +119,8 @@ dots follow the droplet's outer edge. Also check the `notes` column in
 - `FAILED`: no droplet was found. This happens on very flat UVO droplets.
 
 ### 3.6 Compare with JayB's reference angles
+
+The comparison uses JayB's ChatGPT-assisted estimates as a reference.
 
 ```python
 import pandas as pd

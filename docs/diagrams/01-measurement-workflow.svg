@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="740" viewBox="0 0 1160 740" role="img"><title>From microscope image to contact angle</title><desc>Source  /  README workflow · src/contact_angle.py · src/run_baseline.py</desc><rect x="0" y="0" width="1160" height="740" rx="0" fill="#F5F9FC" stroke="#F5F9FC" stroke-width="1.4"/>
+<rect x="0" y="0" width="1160" height="7" rx="0" fill="#096184" stroke="#096184" stroke-width="1.4"/>
+<text x="42" y="44.62" fill="#096184" font-family="Arial, sans-serif" font-size="17" font-weight="700" xml:space="preserve">WATERDROPML  /  01</text>
+<text x="42" y="87.96" fill="#142D42" font-family="Arial, sans-serif" font-size="36" font-weight="700" xml:space="preserve">From microscope image to contact angle</text>
+<text x="42" y="127.34" fill="#39566B" font-family="Arial, sans-serif" font-size="19" font-weight="400" xml:space="preserve">v1.0 uses classical computer vision. Mask cleanup and U-Net training are future work.</text>
+<polyline points="42.000,693.000 1118.000,693.000" fill="none" stroke="#B9CDDA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="42" y="717.76" fill="#4D6475" font-family="Arial, sans-serif" font-size="16" font-weight="400" xml:space="preserve">Source  /  README workflow · src/contact_angle.py · src/run_baseline.py</text>
+<rect x="42" y="158" width="251" height="127" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="59" y="184.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">01  ·  INPUT</text>
+<text x="59" y="214.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Orient image</text>
+<text x="59" y="242.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Rotate the Keyence</text>
+<text x="59" y="263.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">image 90° clockwise.</text>
+<rect x="317" y="158" width="251" height="127" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="334" y="184.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">02  ·  ALIGN</text>
+<text x="334" y="214.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Find substrate</text>
+<text x="334" y="242.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Find the bright ridge</text>
+<text x="334" y="263.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">with RANSAC, then deskew.</text>
+<rect x="592" y="158" width="251" height="127" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="609" y="184.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">03  ·  SEGMENT</text>
+<text x="609" y="214.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Build droplet mask</text>
+<text x="609" y="242.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Half-scale edges → hull</text>
+<text x="609" y="263.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">→ GrabCut refinement.</text>
+<rect x="867" y="158" width="251" height="127" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="884" y="184.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">04  ·  TRACE</text>
+<text x="884" y="214.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Extract profile</text>
+<text x="884" y="242.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Trace left/right edges</text>
+<text x="884" y="263.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">by row and top by column.</text>
+<polyline points="295.000,222.000 313.000,222.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 304.372 227.055 L 313 222 L 304.372 216.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="570.000,222.000 588.000,222.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 579.372 227.055 L 588 222 L 579.372 216.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="845.000,222.000 863.000,222.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 854.372 227.055 L 863 222 L 854.372 216.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="318" y="312.76" fill="#4D6475" font-family="Arial, sans-serif" font-size="16" font-weight="400" xml:space="preserve">Ignore reflection below the substrate.</text>
+<polyline points="992.000,286.000 992.000,334.000 305.000,334.000 305.000,362.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 299.945 353.372 L 305 362 L 310.055 353.372" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="855.000,334.000 855.000,362.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 849.945 353.372 L 855 362 L 860.055 353.372" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="42" y="368" width="525" height="119" rx="12" fill="#F2ECFA" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="59" y="394.76" fill="#6B4491" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">05A  ·  PRIMARY ESTIMATE</text>
+<text x="59" y="424.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Fit a spherical cap</text>
+<text x="59" y="452.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Fit a circle to the usable profile → theta_circle.</text>
+<rect x="593" y="368" width="525" height="119" rx="12" fill="#E6F6EE" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="610" y="394.76" fill="#146755" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">05B  ·  SIDE-SPECIFIC ESTIMATES</text>
+<text x="610" y="424.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Fit local tangents</text>
+<text x="610" y="452.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Fit near each visible contact → theta_left / theta_right.</text>
+<polyline points="305.000,488.000 305.000,513.000 580.000,513.000 580.000,532.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 574.945 523.372 L 580 532 L 585.055 523.372" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="855.000,488.000 855.000,513.000 582.000,513.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="42" y="538" width="1076" height="67" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="60" y="564.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">06  ·  WRITE OUTPUTS</text>
+<text x="275" y="566.34" fill="#142D42" font-family="Arial, sans-serif" font-size="19" font-weight="400" xml:space="preserve">Angles and QC notes (CSV)  ·  Review overlays (JPG)  ·  Masks + upright images</text>
+<text x="60" y="594.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">07  ·  COMPARE</text>
+<text x="275" y="594.34" fill="#142D42" font-family="Arial, sans-serif" font-size="19" font-weight="400" xml:space="preserve">Join on filename and report circle estimate minus JayB estimate (degrees).</text>
+<rect x="42" y="620" width="1076" height="51" rx="12" fill="#FFF2D9" stroke="#B9CDDA" stroke-width="1.4" stroke-dasharray="7 5"/>
+<text x="60" y="648.76" fill="#88501B" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">PLANNED</text>
+<text x="175" y="648.2" fill="#142D42" font-family="Arial, sans-serif" font-size="20" font-weight="400" xml:space="preserve">Review and correct masks → train U-Net → reuse the angle-fitting code.</text></svg>

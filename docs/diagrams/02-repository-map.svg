@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="726" viewBox="0 0 1160 726" role="img"><title>Where inputs, code, and results live</title><desc>Source  /  Tracked tree at 2b8c097 · README layout · src/dataset.py · src/run_baseline.py</desc><rect x="0" y="0" width="1160" height="726" rx="0" fill="#F5F9FC" stroke="#F5F9FC" stroke-width="1.4"/>
+<rect x="0" y="0" width="1160" height="7" rx="0" fill="#096184" stroke="#096184" stroke-width="1.4"/>
+<text x="42" y="44.62" fill="#096184" font-family="Arial, sans-serif" font-size="17" font-weight="700" xml:space="preserve">WATERDROPML  /  02</text>
+<text x="42" y="87.96" fill="#142D42" font-family="Arial, sans-serif" font-size="36" font-weight="700" xml:space="preserve">Where inputs, code, and results live</text>
+<text x="42" y="127.34" fill="#39566B" font-family="Arial, sans-serif" font-size="19" font-weight="400" xml:space="preserve">The batch runner indexes the images by filename and calls the per-image measurement code.</text>
+<polyline points="42.000,679.000 1118.000,679.000" fill="none" stroke="#B9CDDA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="42" y="703.76" fill="#4D6475" font-family="Arial, sans-serif" font-size="16" font-weight="400" xml:space="preserve">Source  /  Tracked tree at 2b8c097 · README layout · src/dataset.py · src/run_baseline.py</text>
+<text x="42" y="168.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">IMAGE COLLECTION</text>
+<text x="408" y="168.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">PYTHON PIPELINE</text>
+<text x="774" y="168.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">GENERATED OUTPUTS</text>
+<rect x="42" y="181" width="320" height="119" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="59" y="207.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">ORIGINALS</text>
+<text x="59" y="237.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">Contact angle/</text>
+<text x="59" y="265.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">59 measurement frames</text>
+<text x="59" y="286.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">+ 19 test or calibration frames.</text>
+<rect x="42" y="340" width="320" height="116" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="59" y="366.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">ANALYSIS INPUT</text>
+<text x="59" y="396.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">data/raw/</text>
+<text x="59" y="424.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">59 measurement JPGs.</text>
+<text x="59" y="445.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Test shots stay out of this set.</text>
+<rect x="42" y="474" width="320" height="116" rx="12" fill="#F2ECFA" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="59" y="500.76" fill="#6B4491" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">EXTERNAL COMPARISON</text>
+<text x="59" y="530.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">data/reference_jayb/</text>
+<text x="59" y="558.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Annotated images and</text>
+<text x="59" y="579.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">jayb_angles.csv for comparison.</text>
+<rect x="408" y="181" width="320" height="119" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="425" y="207.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">METADATA</text>
+<text x="425" y="237.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">src/dataset.py</text>
+<text x="425" y="265.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Parse filenames and build an</text>
+<text x="425" y="286.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">index from the measurement set.</text>
+<rect x="408" y="340" width="320" height="116" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="425" y="366.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">BATCH ENTRY POINT</text>
+<text x="425" y="396.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">src/run_baseline.py</text>
+<text x="425" y="424.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Build the index, then measure</text>
+<text x="425" y="445.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">each image and record failures.</text>
+<rect x="408" y="474" width="320" height="116" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="425" y="500.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">PER-IMAGE MEASUREMENT</text>
+<text x="425" y="530.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">src/contact_angle.py</text>
+<text x="425" y="558.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Align, segment, and fit angles.</text>
+<text x="425" y="579.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Save mask, upright image, overlay.</text>
+<rect x="774" y="181" width="344" height="119" rx="12" fill="#E6F6EE" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="791" y="207.76" fill="#146755" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">INDEX EXPORT</text>
+<text x="791" y="237.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">data/index.csv</text>
+<text x="791" y="265.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Filename-derived metadata.</text>
+<text x="791" y="286.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">The CLI can export this index.</text>
+<rect x="774" y="340" width="344" height="116" rx="12" fill="#E6F6EE" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="791" y="366.76" fill="#146755" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">MEASUREMENT TABLES</text>
+<text x="791" y="396.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">baseline_angles.csv</text>
+<text x="791" y="424.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Per-image angles and QC notes.</text>
+<text x="791" y="445.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Written under outputs/.</text>
+<rect x="774" y="474" width="344" height="116" rx="12" fill="#E6F6EE" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="791" y="500.76" fill="#146755" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">IMAGE ARTIFACTS</text>
+<text x="791" y="530.78" fill="#142D42" font-family="Arial, sans-serif" font-size="23" font-weight="700" xml:space="preserve">overlays/ + masks_auto/</text>
+<text x="791" y="558.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Review overlays under outputs/.</text>
+<text x="791" y="579.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Mask pairs under data/.</text>
+<polyline points="202.000,303.000 202.000,335.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 196.945 326.372 L 202 335 L 207.055 326.372" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="364.000,398.000 403.000,398.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 394.372 403.055 L 403 398 L 394.372 392.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="567.000,337.000 567.000,305.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 572.055 313.628 L 567 305 L 561.945 313.628" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="567.000,458.000 567.000,469.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 561.945 460.372 L 567 469 L 572.055 460.372" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="730.000,240.000 769.000,240.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 760.372 245.055 L 769 240 L 760.372 234.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="730.000,398.000 769.000,398.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 760.372 403.055 L 769 398 L 760.372 392.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="730.000,532.000 769.000,532.000" fill="none" stroke="#096184" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 760.372 537.055 L 769 532 L 760.372 526.945" fill="none" stroke="#096184" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="42" y="606" width="1076" height="53" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
+<text x="59" y="636.76" fill="#6B4491" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">SEPARATE STEP</text>
+<text x="230" y="636.48" fill="#142D42" font-family="Arial, sans-serif" font-size="18" font-weight="400" xml:space="preserve">Join baseline and JayB tables by filename → outputs/comparison_vs_jayb.csv</text></svg>
