@@ -363,8 +363,28 @@ def measure(path: str | Path, out_dir: str | Path | None = None,
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     base = detect_baseline(gray)
     img_d, yb = deskew(img, base)
-    h, w = img_d.shape[:2]
     mask = segment_droplet(img_d, yb)
+    return angles_from_mask(path.name, img_d, mask, yb, base.tilt_deg, base.support,
+                            out_dir=out_dir, mask_dir=mask_dir)
+
+
+def angles_from_mask(name: str, img_d: np.ndarray, mask: np.ndarray, yb: float,
+                     tilt_deg: float = 0.0, support: float = float("nan"),
+                     out_dir: str | Path | None = None,
+                     mask_dir: str | Path | None = None,
+                     suffix: str = "") -> Result:
+    """Measure contact angles from a droplet mask on an upright, deskewed image.
+
+    Shared by the classical pipeline and the U-Net: whatever produced the mask,
+    the baseline handling and angle fitting are identical, so the two can be
+    compared fairly.
+    """
+    stem = Path(name).stem
+    mask = np.asarray(mask).astype(bool).copy()
+    mask[int(round(yb)):] = False
+    h, w = img_d.shape[:2]
+    if not mask.any():
+        raise RuntimeError("empty mask")
     prof = extract_profile(mask, yb)
     notes = []
 
@@ -403,17 +423,18 @@ def measure(path: str | Path, out_dir: str | Path | None = None,
     if th_l is not None and th_r is not None and abs(th_l - th_r) > 15:
         notes.append("L/R disagree >15 deg")
 
-    res = Result(path.name, base.tilt_deg, base.support, yb, height, width,
+    res = Result(name, tilt_deg, support, yb, height, width,
                  th_c, th_l, th_r, left_in, right_in, notes)
 
     if mask_dir is not None:
         Path(mask_dir).mkdir(parents=True, exist_ok=True)
-        cv2.imwrite(str(Path(mask_dir) / (path.stem + "_mask.png")), mask.astype(np.uint8) * 255)
-        cv2.imwrite(str(Path(mask_dir) / (path.stem + "_upright.jpg")), img_d)
+        cv2.imwrite(str(Path(mask_dir) / (stem + suffix + "_mask.png")), mask.astype(np.uint8) * 255)
+        if not suffix:
+            cv2.imwrite(str(Path(mask_dir) / (stem + "_upright.jpg")), img_d)
     if out_dir is not None:
         Path(out_dir).mkdir(parents=True, exist_ok=True)
         draw_overlay(img_d, pts, yb, res, circ, (xl, fl), (xr, fr),
-                     Path(out_dir) / (path.stem + "_overlay.jpg"))
+                     Path(out_dir) / (stem + suffix + "_overlay.jpg"))
     return res
 
 

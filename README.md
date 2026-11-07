@@ -177,6 +177,11 @@ print(r.theta_circle, r.theta_left, r.theta_right, r.notes)
 
 ## 5. Next step: U-Net segmentation (v2.0 plan)
 
+> **Hands-on instructions and commands:** see [`docs/UNET_GUIDE.md`](docs/UNET_GUIDE.md).
+> The scripts are in `src/unet/` (prepare_data, train, predict, evaluate), and there is a Colab notebook in
+> `notebooks/train_unet_colab.ipynb`. The code is written and has been smoke-tested end to end;
+> the first real training run is still to do.
+
 v1.0 is the classical pipeline: there is no trained model yet. Its masks in
 `data/masks_auto/` are the starting point for U-Net training labels. Some of them
 trace the droplet's outer edge incorrectly, and a U-Net trained on those would
@@ -226,19 +231,19 @@ re-check the full set so a fix for a few images doesn't break others.
   magnification, including frames where one contact point is cut off. Start with
   the images marked `bad` or `fixable`.
 
-### Step 4: Train the U-Net (`src/train_unet.py`, to be written)
+### Step 4: Train the U-Net (`src/unet/train.py`)
 
 | Setting | Choice | Reason |
 |---|---|---|
 | Model | U-Net, `segmentation-models-pytorch`, ResNet-34 encoder pretrained on ImageNet | Pretraining is essential with about 50 images |
-| Input | upright images resized or tiled to 512 px, plus `masks_gt/` | |
-| Augmentation | `albumentations`: horizontal flip, brightness/contrast, blur, ±3° rotation | No vertical flip: droplets always sit on top |
+| Input | upright images cropped to 160 px below the baseline and downscaled 4× (`src/unet/prepare_data.py`), plus `masks_gt/` | |
+| Augmentation | built into `train.py`: horizontal flip, ±3° rotation, ±10% scale, brightness/contrast, colour cast, blur, noise | No vertical flip: droplets always sit on top |
 | Split | hold out whole droplets (`sample_id` in `data/index.csv`), not individual shots | Shots of one droplet in both train and test would inflate scores |
 | Loss | Dice + BCE | |
 | Hardware | laptop GPU or Google Colab (free tier) | |
 
-Add these to `requirements.txt`: `torch`, `segmentation-models-pytorch`,
-`albumentations`.
+Install with `pip install -r requirements.txt` (it now includes `torch` and
+`segmentation-models-pytorch`).
 
 ### Step 5: Evaluate against the classical baseline
 

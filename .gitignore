@@ -13,3 +13,5 @@ __pycache__/
 .ipynb_checkpoints/
 # scratch / debug images
 outputs/_scratch/
+# trained model weights (~100 MB each; share via Drive instead)
+models/*.pt
