@@ -1,74 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="745" viewBox="0 0 1160 745" role="img"><title>What the contact-angle overlay measures</title><desc>Source  /  src/contact_angle.py · outputs/baseline_angles.csv · A3_1_30 review overlay</desc><rect x="0" y="0" width="1160" height="745" rx="0" fill="#F5F9FC" stroke="#F5F9FC" stroke-width="1.4"/>
-<rect x="0" y="0" width="1160" height="7" rx="0" fill="#096184" stroke="#096184" stroke-width="1.4"/>
-<text x="42" y="44.62" fill="#096184" font-family="Arial, sans-serif" font-size="17" font-weight="700" xml:space="preserve">WATERDROPML  /  04</text>
-<text x="42" y="87.96" fill="#142D42" font-family="Arial, sans-serif" font-size="36" font-weight="700" xml:space="preserve">What the contact-angle overlay measures</text>
-<text x="42" y="127.34" fill="#39566B" font-family="Arial, sans-serif" font-size="19" font-weight="400" xml:space="preserve">The angle is measured through the liquid, between the substrate and the profile tangent.</text>
-<polyline points="42.000,698.000 1118.000,698.000" fill="none" stroke="#B9CDDA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="42" y="722.76" fill="#4D6475" font-family="Arial, sans-serif" font-size="16" font-weight="400" xml:space="preserve">Source  /  src/contact_angle.py · outputs/baseline_angles.csv · A3_1_30 review overlay</text>
-<rect x="42" y="156" width="672" height="508" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
-<text x="64" y="186.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">GEOMETRY SCHEMATIC</text>
-<text x="64" y="214.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Angles and marker placement are illustrative.</text>
-<rect x="65" y="435" width="625" height="203" rx="0" fill="#F5F9FC" stroke="#F5F9FC" stroke-width="1.4"/>
-<polyline points="244.093,435.000 245.806,429.737 247.724,424.546 249.844,419.434 252.163,414.409 254.678,409.479 257.385,404.651 260.278,399.933 263.355,395.333 266.610,390.857 270.038,386.511 273.633,382.304 277.392,378.241 281.306,374.329 285.371,370.574 289.581,366.981 293.928,363.555 298.406,360.303 303.009,357.230 307.728,354.339 312.558,351.636 317.490,349.124 322.516,346.808 327.630,344.691 332.822,342.776 338.086,341.067 343.413,339.565 348.794,338.273 354.223,337.194 359.689,336.329 365.185,335.678 370.703,335.244 376.233,335.027 381.767,335.027 387.297,335.244 392.815,335.678 398.311,336.329 403.777,337.194 409.206,338.273 414.587,339.565 419.914,341.067 425.178,342.776 430.370,344.691 435.484,346.808 440.510,349.124 445.442,351.636 450.272,354.339 454.991,357.230 459.594,360.303 464.072,363.555 468.419,366.981 472.629,370.574 476.694,374.329 480.608,378.241 484.367,382.304 487.962,386.511 491.390,390.857 494.645,395.333 497.722,399.933 500.615,404.651 503.322,409.479 505.837,414.409 508.156,419.434 510.276,424.546 512.194,429.737 513.907,435.000 244.093,435.000" fill="#E5F4FB" stroke="#81B3CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="379.0" cy="476.0" rx="141.0" ry="141.0" fill="none" stroke="#6B4491" stroke-width="2" stroke-dasharray="7 5"/>
-<polyline points="65.000,435.000 690.000,435.000" fill="none" stroke="#00829B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="70" y="462.62" fill="#00829B" font-family="Arial, sans-serif" font-size="17" font-weight="700" xml:space="preserve">Substrate baseline</text>
-<text x="70" y="610.62" fill="#4D6475" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Reflection region</text>
-<text x="70" y="631.87" fill="#4D6475" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Excluded from fit</text>
-<text x="326" y="395.2" fill="#096184" font-family="Arial, sans-serif" font-size="20" font-weight="700" xml:space="preserve">Liquid</text>
-<ellipse cx="273.63341467323363" cy="382.30430801484385" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="293.9281690111462" cy="363.55541999632044" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="317.48954239971425" cy="349.1242197824839" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="343.41281666987896" cy="339.5648418382258" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="370.70258052506944" cy="335.24435062827126" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="398.31095170554056" cy="336.3286459426047" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="425.1778139518044" cy="342.77609261610536" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="450.2715237336251" cy="354.33911925073323" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="472.62852367281874" cy="370.57372455194854" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<ellipse cx="487.9624013685167" cy="386.51148069162014" rx="2.8" ry="2.8" fill="#F5D456" stroke="#8D6B04" stroke-width="1"/>
-<polyline points="244.093,435.000 271.717,344.105" fill="none" stroke="#AC343D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="249.84407010332262" cy="419.4337046243564" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="252.16344567187113" cy="414.4086979666153" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="254.67823537373164" cy="409.4785835973803" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="257.38456473081965" cy="404.65095722935166" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="260.2782641643527" cy="399.933256674347" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<polyline points="288.093,435.000 288.003,432.195 287.735,429.402 287.289,426.631 286.668,423.895 285.874,421.203 284.909,418.568 283.779,416.000 282.487,413.509 281.039,411.105 279.441,408.798 277.698,406.598 275.820,404.514 273.812,402.554 271.683,400.725 269.442,399.036 267.098,397.493 264.660,396.103 262.139,394.871 259.544,393.802 256.887,392.901" fill="none" stroke="#AC343D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="294.0926243676796" y="417.48" fill="#AC343D" font-family="Arial, sans-serif" font-size="18" font-weight="700" xml:space="preserve">θL</text>
-<ellipse cx="244.0926243676796" cy="434.99999999999994" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="#00829B" stroke-width="2"/>
-<polyline points="513.907,435.000 486.283,344.105" fill="none" stroke="#AC343D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="497.72173583564734" cy="399.93325667434704" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="500.61543526918035" cy="404.65095722935166" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="503.32176462626836" cy="409.4785835973803" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="505.8365543281289" cy="414.40869796661536" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<ellipse cx="508.1559298966774" cy="419.4337046243564" rx="2.7" ry="2.7" fill="#F5AD5B" stroke="#B95813" stroke-width="1"/>
-<polyline points="469.907,435.000 469.997,432.195 470.265,429.402 470.711,426.631 471.332,423.895 472.126,421.203 473.091,418.568 474.221,416.000 475.513,413.509 476.961,411.105 478.559,408.798 480.302,406.598 482.180,404.514 484.188,402.554 486.317,400.725 488.558,399.036 490.902,397.493 493.340,396.103 495.861,394.871 498.456,393.802 501.113,392.901" fill="none" stroke="#AC343D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="442.9073756323204" y="417.48" fill="#AC343D" font-family="Arial, sans-serif" font-size="18" font-weight="700" xml:space="preserve">θR</text>
-<ellipse cx="513.9073756323204" cy="435.0" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="#00829B" stroke-width="2"/>
-<text x="84" y="273.62" fill="#8D6B04" font-family="Arial, sans-serif" font-size="17" font-weight="700" xml:space="preserve">Outer profile</text>
-<polyline points="193.000,275.000 238.000,275.000 327.000,341.000" fill="none" stroke="#8D6B04" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M 317.058 339.921 L 327 341 L 323.081 331.8" fill="none" stroke="#8D6B04" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="516" y="589.62" fill="#6B4491" font-family="Arial, sans-serif" font-size="17" font-weight="700" xml:space="preserve">Fitted circle</text>
-<polyline points="516.000,599.000 496.000,599.000 475.000,581.000" fill="none" stroke="#6B4491" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M 484.841 582.777 L 475 581 L 478.261 590.453" fill="none" stroke="#6B4491" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="736" y="156" width="382" height="259" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
-<text x="756" y="187.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">READ THE OVERLAY</text>
-<polyline points="755.000,220.000 778.000,220.000" fill="none" stroke="#00829B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="790" y="223.62" fill="#142D42" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Substrate baseline</text>
-<ellipse cx="761.0" cy="253.0" rx="4.0" ry="4.0" fill="#8D6B04" stroke="#8D6B04" stroke-width="1"/>
-<text x="790" y="256.62" fill="#142D42" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Profile points used for circle fit</text>
-<polyline points="755.000,286.000 778.000,286.000" fill="none" stroke="#6B4491" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
-<text x="790" y="289.62" fill="#142D42" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Spherical-cap circle fit</text>
-<polyline points="755.000,319.000 778.000,319.000" fill="none" stroke="#AC343D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="790" y="322.62" fill="#142D42" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Left and right tangents</text>
-<ellipse cx="761.0" cy="352.0" rx="4.0" ry="4.0" fill="#B95813" stroke="#B95813" stroke-width="1"/>
-<text x="790" y="355.62" fill="#142D42" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">Points used for local tangent fits</text>
-<text x="756" y="392.76" fill="#6B4491" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">Use the circle angle as the primary estimate.</text>
-<rect x="736" y="428" width="382" height="236" rx="12" fill="#FFFFFF" stroke="#B9CDDA" stroke-width="1.4"/>
-<text x="756" y="457.76" fill="#096184" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">REVIEW BEFORE ACCEPTING</text>
-<text x="756" y="486.62" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">1. Baseline sits on the substrate.</text>
-<text x="756" y="507.87" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">2. Profile follows the droplet rim.</text>
-<text x="756" y="529.12" fill="#39566B" font-family="Arial, sans-serif" font-size="17" font-weight="400" xml:space="preserve">3. Check crop, &gt;15° L/R gap, or failure.</text>
-<polyline points="756.000,549.000 1099.000,549.000" fill="none" stroke="#B9CDDA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="756" y="575.76" fill="#146755" font-family="Arial, sans-serif" font-size="16" font-weight="700" xml:space="preserve">TRACKED EXAMPLE  ·  A3_1_30</text>
-<text x="756" y="604.48" fill="#142D42" font-family="Arial, sans-serif" font-size="18" font-weight="700" xml:space="preserve">75.4° circle  ·  73.4° left  ·  79.8° right</text>
-<text x="756" y="633.76" fill="#4D6475" font-family="Arial, sans-serif" font-size="16" font-weight="400" xml:space="preserve">Values from CSV, rounded to one decimal.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+<title id="title">Check the contact angle</title>
+<desc id="desc">Illustrative droplet profile. The contact angle is measured through the liquid between substrate and tangent. Check substrate alignment, outer rim and quality notes before accepting a measurement.</desc>
+<rect width="900" height="430" fill="white"/>
+<text x="28" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#222222">Check the contact angle</text>
+<polyline points="115.43,285.00 116.81,280.32 118.34,275.69 120.02,271.11 121.84,266.58 123.81,262.12 125.93,257.73 128.19,253.40 130.59,249.16 133.12,244.99 135.79,240.91 138.59,236.91 141.52,233.01 144.57,229.21 147.75,225.50 151.04,221.91 154.45,218.42 157.97,215.04 161.60,211.78 165.34,208.64 169.17,205.63 173.10,202.74 177.12,199.98 181.23,197.35 185.42,194.85 189.69,192.50 194.04,190.28 198.46,188.21 202.94,186.28 207.48,184.50 212.07,182.86 216.72,181.38 221.41,180.05 226.15,178.87 230.92,177.85 235.72,176.98 240.54,176.27 245.39,175.71 250.25,175.32 255.12,175.08 260.00,175.00 264.88,175.08 269.75,175.32 274.61,175.71 279.46,176.27 284.28,176.98 289.08,177.85 293.85,178.87 298.59,180.05 303.28,181.38 307.93,182.86 312.52,184.50 317.06,186.28 321.54,188.21 325.96,190.28 330.31,192.50 334.58,194.85 338.77,197.35 342.88,199.98 346.90,202.74 350.83,205.63 354.66,208.64 358.40,211.78 362.03,215.04 365.55,218.42 368.96,221.91 372.25,225.50 375.43,229.21 378.48,233.01 381.41,236.91 384.21,240.91 386.88,244.99 389.41,249.16 391.81,253.40 394.07,257.73 396.19,262.12 398.16,266.58 399.98,271.11 401.66,275.69 403.19,280.32 404.57,285.00 115.43,285.00" fill="#e8eefb" stroke="#4263a5" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="28.00,285.00 493.00,285.00" fill="none" stroke="#00829b" stroke-width="3" stroke-linejoin="round"/>
+<text x="32" y="324.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#00829b">Substrate</text>
+<text x="220" y="248.0" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#222222">Liquid</text>
+<polyline points="115.43,285.00 140.77,193.44" fill="none" stroke="#ac343d" stroke-width="3" stroke-linejoin="round"/>
+<text x="49" y="161.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#ac343d">Tangent</text>
+<polyline points="111.00,166.00 140.43,202.00" fill="none" stroke="#ac343d" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="161.43,285.00 161.39,283.01 161.26,281.02 161.04,279.03 160.74,277.06 160.35,275.10 159.88,273.17 159.33,271.25 158.69,269.36 157.97,267.50 157.17,265.67 156.30,263.88 155.34,262.13 154.31,260.42 153.21,258.76 152.04,257.15 150.80,255.58 149.49,254.08 148.12,252.63 146.68,251.25 145.19,249.92 143.64,248.67 142.04,247.48 140.39,246.36 138.69,245.31 136.95,244.34 135.17,243.45 133.35,242.63 131.49,241.89 129.61,241.24 127.70,240.67" fill="none" stroke="#ac343d" stroke-width="2" stroke-linejoin="round"/>
+<text x="168.4316770519904" y="262.0" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#ac343d">θ</text>
+<text x="32" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222">θ is measured inside the liquid.</text>
+<text x="530" y="109.0" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#28823b">Before accepting a result</text>
+<text x="530" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222">1. Baseline sits on substrate.</text>
+<text x="530" y="186.3" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222"></text>
+<text x="530" y="213.6" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222">2. Outline follows the outer rim.</text>
+<text x="530" y="240.9" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222"></text>
+<text x="530" y="268.2" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222">3. Check crop and failure notes.</text>
+<rect x="530" y="323" width="342" height="78" fill="#fff3e0" stroke="#c77800" stroke-width="2"/>
+<text x="546" y="355.7" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222">Use circle angle first.</text>
+<text x="546" y="383.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#222222">Review left/right gaps &gt;15°.</text>
+</svg>

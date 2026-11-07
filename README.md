@@ -15,6 +15,9 @@ the next version.
 
 [Editable Excalidraw source](docs/diagrams/01-measurement-workflow.excalidraw)
 
+This diagram shows the current classical pipeline. U-Net segmentation is
+planned; see Section 5. The two fits use the same extracted droplet profile.
+
 ### Why each step exists
 
 | Step | Problem it solves |
@@ -99,6 +102,10 @@ python src/run_baseline.py --only A3_1_30  # just one image or a group (updates 
 ![Contact-angle geometry and review checklist, with example values from A3_1_30](docs/diagrams/04-contact-angle-and-qc.svg)
 
 [Editable Excalidraw source](docs/diagrams/04-contact-angle-and-qc.excalidraw)
+
+The schematic shows one contact angle for clarity; left and right angles are
+measured at their respective contact points. It illustrates the geometry,
+not a measured droplet. Use the overlay colors below to review actual results.
 
 Open `outputs/overlays/<name>_overlay.jpg` for each image:
 
