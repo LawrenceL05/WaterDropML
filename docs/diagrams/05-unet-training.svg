@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1100" viewBox="0 0 1000 1100" role="img" aria-labelledby="title desc">
+<title id="title">How WaterDropML trains a U-Net</title>
+<desc id="desc">Reviewed image-mask pairs are prepared and split by droplet. Training predicts a mask, compares it with the label and updates weights. Held-out validation selects the best checkpoint.</desc>
+<rect width="1000" height="1100" fill="white"/>
+<text x="28" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#222222">How WaterDropML trains a U-Net</text>
+<text x="28" y="85.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4263a5">PREPARE IMAGE + MASK PAIRS</text>
+<rect x="28" y="105" width="280" height="115" fill="#fff3e0" stroke="#c77800" stroke-width="2"/>
+<text x="44" y="143.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Review labels</text>
+<text x="44" y="169.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Correct masks_gt/</text>
+<text x="44" y="195.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">QC: good / fixable / bad</text>
+<rect x="360" y="105" width="280" height="115" fill="#e8eefb" stroke="#4263a5" stroke-width="2"/>
+<text x="376" y="143.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">prepare_data.py</text>
+<text x="376" y="169.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Crop below baseline</text>
+<text x="376" y="195.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Downscale to 25%</text>
+<rect x="692" y="105" width="280" height="115" fill="#e8eefb" stroke="#4263a5" stroke-width="2"/>
+<text x="708" y="143.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Split by droplet</text>
+<text x="708" y="169.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Train and validation</text>
+<text x="708" y="195.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Never split by shot</text>
+<polyline points="308.00,162.00 352.00,162.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="343.22,166.79 352,162 343.22,157.21" fill="none" stroke="#64748b" stroke-width="2"/>
+<polyline points="640.00,162.00 684.00,162.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="675.22,166.79 684,162 675.22,157.21" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="28" y="260.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Corrected masks take priority; eligible automatic masks are the fallback.</text>
+<text x="28" y="302.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4263a5">TRAINING: REPEAT FOR EACH BATCH</text>
+<polyline points="832.00,220.00 832.00,320.00 168.00,320.00 168.00,337.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="163.21,328.22 168,337 172.79,328.22" fill="none" stroke="#64748b" stroke-width="2"/>
+<rect x="28" y="345" width="280" height="125" fill="#e8eefb" stroke="#4263a5" stroke-width="2"/>
+<text x="44" y="388.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Training pairs</text>
+<text x="44" y="414.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">384 px random crops</text>
+<text x="44" y="440.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Paired augmentation</text>
+<rect x="360" y="345" width="280" height="125" fill="#e8eefb" stroke="#4263a5" stroke-width="2"/>
+<text x="376" y="388.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">U-Net predicts mask</text>
+<text x="376" y="414.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">ResNet-34 encoder</text>
+<text x="376" y="440.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Decoder + skip links</text>
+<rect x="692" y="345" width="280" height="125" fill="#fff3e0" stroke="#c77800" stroke-width="2"/>
+<text x="708" y="388.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Compare with label</text>
+<text x="708" y="414.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Dice + BCE loss</text>
+<text x="708" y="440.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Smaller loss is better</text>
+<polyline points="308.00,385.00 352.00,385.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="343.22,389.79 352,385 343.22,380.21" fill="none" stroke="#64748b" stroke-width="2"/>
+<polyline points="640.00,385.00 684.00,385.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="675.22,389.79 684,385 675.22,380.21" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="314" y="368.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#222222">RGB</text>
+<text x="644" y="368.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#222222">logits</text>
+<polyline points="168.00,470.00 168.00,516.00 832.00,516.00 832.00,478.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="836.79,486.78 832,478 827.21,486.78" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="28" y="548.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#222222">Target mask: same crop + geometry</text>
+<rect x="360" y="570" width="280" height="100" fill="#fff3e0" stroke="#c77800" stroke-width="2"/>
+<text x="376" y="601.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Backpropagation</text>
+<text x="376" y="627.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">AdamW updates weights</text>
+<text x="376" y="653.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Cosine learning rate</text>
+<polyline points="832.00,470.00 832.00,620.00 648.00,620.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="656.78,615.21 648,620 656.78,624.79" fill="none" stroke="#64748b" stroke-width="2"/>
+<polyline points="500.00,570.00 500.00,478.00" fill="none" stroke="#c77800" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="504.79,486.78 500,478 495.21,486.78" fill="none" stroke="#c77800" stroke-width="2"/>
+<text x="28" y="593.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Initial encoder weights:</text>
+<text x="28" y="619.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">pretrained on ImageNet</text>
+<text x="28" y="645.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222"></text>
+<text x="28" y="671.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Default: 60 epochs</text>
+<text x="28" y="730.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#28823b">VALIDATE AFTER EACH EPOCH</text>
+<rect x="28" y="760" width="420" height="120" fill="#e8f5e9" stroke="#28823b" stroke-width="2"/>
+<text x="44" y="801.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Whole held-out images</text>
+<text x="44" y="827.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Measure IoU, Dice and boundary error</text>
+<text x="44" y="853.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Validation does not update weights</text>
+<rect x="552" y="760" width="420" height="120" fill="#e8f5e9" stroke="#28823b" stroke-width="2"/>
+<text x="568" y="801.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Keep highest validation IoU</text>
+<text x="568" y="827.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">models/unet_best.pt</text>
+<text x="568" y="853.0" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Log every epoch: train_log.csv</text>
+<polyline points="448.00,820.00 544.00,820.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="535.22,824.79 544,820 535.22,815.21" fill="none" stroke="#64748b" stroke-width="2"/>
+<polyline points="972.00,162.00 986.00,162.00 986.00,735.00 238.00,735.00 238.00,752.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="233.21,743.22 238,752 242.79,743.22" fill="none" stroke="#64748b" stroke-width="2"/>
+<polyline points="640.00,440.00 662.00,440.00 662.00,699.00 410.00,699.00 410.00,752.00" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="405.21,743.22 410,752 414.79,743.22" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="676" y="699.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#222222">Current model</text>
+<rect x="28" y="920" width="944" height="135" fill="#e8f5e9" stroke="#28823b" stroke-width="2"/>
+<text x="44" y="968.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Use the saved model: predict.py -&gt; droplet mask -&gt; existing angle fitting</text>
+<text x="44" y="994.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">Evaluate against corrected held-out masks, then correct errors and retrain.</text>
+<text x="44" y="1020.5" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#222222">U-Net replaces segmentation; orientation and baseline detection remain separate.</text>
+</svg>

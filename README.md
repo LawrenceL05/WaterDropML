@@ -179,6 +179,11 @@ print(r.theta_circle, r.theta_left, r.theta_right, r.notes)
 ## 5. U-Net segmentation (initial pilot completed)
 
 > **Hands-on instructions and commands:** see [`docs/UNET_GUIDE.md`](docs/UNET_GUIDE.md).
+
+![U-Net training workflow: prepare labels, split by droplet, train, validate and save the best model](docs/diagrams/05-unet-training.svg)
+
+[Edit this diagram in Excalidraw](docs/diagrams/05-unet-training.excalidraw).
+
 > The scripts are in `src/unet/` (prepare_data, train, predict, evaluate), and there is a Colab notebook in
 > `notebooks/train_unet_colab.ipynb`. The code is written and has been smoke-tested end to end;
 > the first corrected-label training run completed on 2026-11-08. See the

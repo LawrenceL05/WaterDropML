@@ -168,8 +168,49 @@ def geometry():
     d.save()
 
 
+def unet_training():
+    d = Diagram('05-unet-training', 'How WaterDropML trains a U-Net',
+                'Reviewed image-mask pairs are prepared and split by droplet. Training predicts a mask, compares it with the label and updates weights. Held-out validation selects the best checkpoint.', 1100, 1000)
+    d.text(28, 67, 'PREPARE IMAGE + MASK PAIRS', 18, BLUE[1])
+    d.box(28, 105, 280, 115, 'Review labels\nCorrect masks_gt/\nQC: good / fixable / bad', ORANGE, 20)
+    d.box(360, 105, 280, 115, 'prepare_data.py\nCrop below baseline\nDownscale to 25%', size=20)
+    d.box(692, 105, 280, 115, 'Split by droplet\nTrain and validation\nNever split by shot', size=20)
+    d.line([(308, 162), (352, 162)], arrow=True)
+    d.line([(640, 162), (684, 162)], arrow=True)
+    d.text(28, 240, 'Corrected masks take priority; eligible automatic masks are the fallback.', 20)
+    d.text(28, 284, 'TRAINING: REPEAT FOR EACH BATCH', 18, BLUE[1])
+    d.line([(832, 220), (832, 320), (168, 320), (168, 337)], arrow=True)
+    d.box(28, 345, 280, 125, 'Training pairs\n384 px random crops\nPaired augmentation', size=20)
+    d.box(360, 345, 280, 125, 'U-Net predicts mask\nResNet-34 encoder\nDecoder + skip links', size=20)
+    d.box(692, 345, 280, 125, 'Compare with label\nDice + BCE loss\nSmaller loss is better', ORANGE, 20)
+    d.line([(308, 385), (352, 385)], arrow=True)
+    d.line([(640, 385), (684, 385)], arrow=True)
+    d.text(314, 352, 'RGB', 16)
+    d.text(644, 352, 'logits', 16)
+    d.line([(168, 470), (168, 516), (832, 516), (832, 478)], arrow=True)
+    d.text(28, 530, 'Target mask: same crop + geometry', 18)
+    d.box(360, 570, 280, 100, 'Backpropagation\nAdamW updates weights\nCosine learning rate', ORANGE, 20)
+    d.line([(832, 470), (832, 620), (648, 620)], arrow=True)
+    d.line([(500, 570), (500, 478)], arrow=True, color=ORANGE[1])
+    d.text(28, 573, 'Initial encoder weights:\npretrained on ImageNet\n\nDefault: 60 epochs', 20)
+    d.text(28, 712, 'VALIDATE AFTER EACH EPOCH', 18, GREEN[1])
+    d.box(28, 760, 420, 120, 'Whole held-out images\nMeasure IoU, Dice and boundary error\nValidation does not update weights', GREEN, 20)
+    d.box(552, 760, 420, 120, 'Keep highest validation IoU\nmodels/unet_best.pt\nLog every epoch: train_log.csv', GREEN, 20)
+    d.line([(448, 820), (544, 820)], arrow=True)
+    d.line([(972, 162), (986, 162), (986, 735), (238, 735), (238, 752)], arrow=True)
+    d.line([(640, 440), (662, 440), (662, 699), (410, 699), (410, 752)], arrow=True)
+    d.text(676, 681, 'Current model', 18)
+    d.box(28, 920, 944, 135, 'Use the saved model: predict.py -> droplet mask -> existing angle fitting\nEvaluate against corrected held-out masks, then correct errors and retrain.\nU-Net replaces segmentation; orientation and baseline detection remain separate.', GREEN, 20)
+    # Use Excalifont in the new editable diagram without changing existing exports.
+    for element in d.elements:
+        if element['type'] == 'text':
+            element['fontFamily'] = 5
+    d.save()
+
+
 if __name__ == '__main__':
     workflow()
     repository()
     filenames()
     geometry()
+    unet_training()

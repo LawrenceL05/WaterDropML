@@ -17,6 +17,23 @@ can be compared fairly.
          same angle fitting (contact_angle.angles_from_mask)
 ```
 
+## Training diagram
+
+![U-Net training: prepare image-mask pairs, split by droplet, optimize the model, validate and save the best checkpoint](diagrams/05-unet-training.svg)
+
+Blue boxes show data and prediction, orange boxes show review and learning,
+and green boxes show validation and outputs. Arrows into the loss carry the
+prediction and its matching target mask; backpropagation updates the model.
+Validation uses whole held-out images and does not update model weights.
+
+The data builder prefers corrected masks and can fall back to automatic labels.
+It excludes `bad` automatic labels, but still accepts `fixable` ones; correct
+known errors before treating those masks as reliable training labels. Even with
+`--gt-only`, validation follows the prepared metadata, so check that held-out
+labels are corrected before interpreting the scores as ground-truth accuracy.
+
+[Editable Excalidraw source](diagrams/05-unet-training.excalidraw).
+
 ## What a U-Net does here
 
 A U-Net is a neural network that labels every pixel of an image, here as

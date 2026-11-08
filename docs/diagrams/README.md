@@ -1,6 +1,6 @@
 # Diagram sources
 
-The four README diagrams use short labels, plain backgrounds and the
+The diagrams use short labels, plain backgrounds and the
 blue/green/orange palette from
 [topology-aware-gpu-scheduling](https://github.com/LawrenceL05/topology-aware-gpu-scheduling).
 Blue identifies inputs and processing, green identifies results, and orange
@@ -20,7 +20,12 @@ python docs/diagrams/generate_diagrams.py
 The generator uses only the Python standard library and produces deterministic
 files. Regenerating overwrites manual edits to the SVG and Excalidraw exports.
 
-The diagrams summarize the current code in `src/dataset.py`,
+The U-Net training diagram (`05-unet-training.svg`) is embedded in the main
+README and the [training guide](../UNET_GUIDE.md). It shows label preparation,
+the droplet-level split, prediction and loss, weight updates, held-out validation,
+and best-checkpoint selection. Its matching `.excalidraw` source uses Excalifont.
+
+The diagrams summarize the current code in `src/unet/`, `src/dataset.py`,
 `src/run_baseline.py` and `src/contact_angle.py`. Algorithm details, filename
 codes, overlay colors, measured examples and planned U-Net work remain in the
 main README so that the figures stay readable at normal page width.
