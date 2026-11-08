@@ -1,0 +1,29 @@
+[
+  {
+    "stem": "20261015_A1_1_50_1",
+    "archive": "WaterDropML_manual_A1_1_50_1.zip",
+    "member": "SegmentationClass/20261015_A1_1_50_1_upright.png",
+    "foreground_pixels": 897041,
+    "mask_sha256": "b13c80165aca9a5f99d4cc7195fda581ea567be9bf1b1cb518ac311d6302121f",
+    "split": "train",
+    "sample_id": "A1_1"
+  },
+  {
+    "stem": "20261015_A1_2_50_2",
+    "archive": "WaterDropML_manual_A1_2_50_2.zip",
+    "member": "SegmentationClass/20261015_A1_2_50_2_upright.png",
+    "foreground_pixels": 892448,
+    "mask_sha256": "3be6e7c8249e38eed5bd37c35a8f795472ef52a1f3fd198fc36d83c7831d3da3",
+    "split": "train",
+    "sample_id": "A1_2"
+  },
+  {
+    "stem": "20261015_A3_1_30",
+    "archive": "WaterDropML_manual_A3_1_30.zip",
+    "member": "SegmentationClass/20261015_A3_1_30_upright.png",
+    "foreground_pixels": 593806,
+    "mask_sha256": "5ac1c1a7c0a99c0be275214d12198cc432ac9ee813853452d25b77a6d6a11227",
+    "split": "val",
+    "sample_id": "A3_1"
+  }
+]

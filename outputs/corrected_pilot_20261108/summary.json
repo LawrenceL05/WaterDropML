@@ -1,0 +1,48 @@
+{
+  "checkpoint": "models/corrected_pilot_20261108/unet_best.pt (local artifact; weights not included in this results update)",
+  "best_epoch": 36,
+  "epochs": 60,
+  "train_images": 2,
+  "validation_images": 1,
+  "seed": 0,
+  "crop": 256,
+  "batch": 8,
+  "samples_per_image": 32,
+  "pretrained_encoder": "resnet34 ImageNet",
+  "evaluation": [
+    {
+      "stem": "20261015_A1_1_50_1",
+      "split": "train",
+      "unet_dice": 0.9969784760855269,
+      "unet_iou": 0.9939751563801322,
+      "unet_boundary_px_full": 1.5981967630824776,
+      "classical_dice": 0.712028548152058,
+      "classical_iou": 0.5528294490770437,
+      "classical_boundary_px_full": 166.72491931992735
+    },
+    {
+      "stem": "20261015_A1_2_50_2",
+      "split": "train",
+      "unet_dice": 0.9964963712416431,
+      "unet_iou": 0.9930172075955681,
+      "unet_boundary_px_full": 14.852507302030023,
+      "classical_dice": 0.5469355888093689,
+      "classical_iou": 0.376401475803274,
+      "classical_boundary_px_full": 204.88812028041724
+    },
+    {
+      "stem": "20261015_A3_1_30",
+      "split": "val",
+      "unet_dice": 0.9867868675995695,
+      "unet_iou": 0.9739183554221668,
+      "unet_boundary_px_full": 4.2290384677266015,
+      "classical_dice": 0.9857488645326226,
+      "classical_iou": 0.9718982114605959,
+      "classical_boundary_px_full": 4.315297604827812
+    }
+  ],
+  "note": "A3_1 is held out for checkpoint selection; no independent test set. Metrics use quarter-resolution baseline crops with no postprocessing.",
+  "checkpoint_sha256": "9e594c14c82dec6fea09423a30bc6e045e633546b0dd01985dd4cbac4856c120",
+  "source_commit": "c76ab5d48d828200aece3b222b2f5d3db6022468",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU; torch 2.6.0+cu124"
+}

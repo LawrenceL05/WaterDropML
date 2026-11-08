@@ -4,8 +4,9 @@ This project measures sessile-droplet contact angles automatically from Keyence
 side-view microscope images (Fenning Research Group, UCSD).
 
 v1.0 is a **classical computer-vision baseline**. It measures every image, and
-the droplet masks it saves will be used to train a U-Net segmentation model in
-the next version.
+the droplet masks it saves provide a comparison for U-Net segmentation. A first
+corrected-label U-Net pilot completed on 2026-11-08; see the
+[pilot results and training instructions](outputs/corrected_pilot_20261108/README.md).
 
 ---
 
@@ -15,8 +16,8 @@ the next version.
 
 [Editable Excalidraw source](docs/diagrams/01-measurement-workflow.excalidraw)
 
-This diagram shows the current classical pipeline. U-Net segmentation is
-planned; see Section 5. The two fits use the same extracted droplet profile.
+This diagram shows the current classical pipeline. An initial U-Net pilot is
+complete; see Section 5 and the [pilot report](outputs/corrected_pilot_20261108/README.md). The two fits use the same extracted droplet profile.
 
 ### Why each step exists
 
@@ -175,14 +176,21 @@ print(r.theta_circle, r.theta_left, r.theta_right, r.notes)
 
 ---
 
-## 5. Next step: U-Net segmentation (v2.0 plan)
+## 5. U-Net segmentation (initial pilot completed)
 
 > **Hands-on instructions and commands:** see [`docs/UNET_GUIDE.md`](docs/UNET_GUIDE.md).
 > The scripts are in `src/unet/` (prepare_data, train, predict, evaluate), and there is a Colab notebook in
 > `notebooks/train_unet_colab.ipynb`. The code is written and has been smoke-tested end to end;
-> the first real training run is still to do.
+> the first corrected-label training run completed on 2026-11-08. See the
+> [pilot report](outputs/corrected_pilot_20261108/README.md) for results, comparison
+> images, the full training log, and commands to repeat it.
 
-v1.0 is the classical pipeline: there is no trained model yet. Its masks in
+v1.0 is the classical pipeline. The initial U-Net pilot trained on two corrected
+A1 images and validated on one A3 image, reaching 97.39% validation IoU versus
+97.19% for the classical mask. This is a small pilot without an independent test
+set or contact-angle validation; it does not yet justify replacing v1.0.
+The trained checkpoint remains local; result artifacts and corrected masks are
+included in the repository. The classical masks in
 `data/masks_auto/` are the starting point for U-Net training labels. Some of them
 trace the droplet's outer edge incorrectly, and a U-Net trained on those would
 learn the same mistakes. The masks therefore have to be checked and corrected
