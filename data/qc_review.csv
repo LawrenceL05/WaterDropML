@@ -1,0 +1,60 @@
+file,status,problem,overlay,auto_hint
+20261015_A1_1_30.jpg,fixable,left angle,outputs/overlays/20261015_A1_1_30_overlay.jpg,L/R disagree >15 deg
+20261015_A1_1_50_1.jpg,bad,outline,outputs/overlays/20261015_A1_1_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A1_1_50_2.jpg,bad,outline,outputs/overlays/20261015_A1_1_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A1_2_30.jpg,fixable,right outline and angle,outputs/overlays/20261015_A1_2_30_overlay.jpg,L/R disagree >15 deg
+20261015_A1_2_50_1.jpg,bad,outline and baseline,outputs/overlays/20261015_A1_2_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A1_2_50_2.jpg,bad,outline,outputs/overlays/20261015_A1_2_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A2_1_30.jpg,bad,angle,outputs/overlays/20261015_A2_1_30_overlay.jpg,
+20261015_A2_1_50_1.jpg,bad,outline,outputs/overlays/20261015_A2_1_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A2_1_50_2.jpg,fixable,angle,outputs/overlays/20261015_A2_1_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A2_2_30.jpg,good,,outputs/overlays/20261015_A2_2_30_overlay.jpg,
+20261015_A2_2_50_1.jpg,bad,outline,outputs/overlays/20261015_A2_2_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A2_2_50_2.jpg,fixable,angle,outputs/overlays/20261015_A2_2_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A3_1_30.jpg,good,,outputs/overlays/20261015_A3_1_30_overlay.jpg,
+20261015_A3_1_50_1.jpg,good,,outputs/overlays/20261015_A3_1_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A3_1_50_2.jpg,fixable,outline,outputs/overlays/20261015_A3_1_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A3_2_30.jpg,fixable,angle,outputs/overlays/20261015_A3_2_30_overlay.jpg,
+20261015_A3_2_50_1.jpg,bad,outline,outputs/overlays/20261015_A3_2_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A3_2_50_2.jpg,bad,outline,outputs/overlays/20261015_A3_2_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A4_1_30.jpg,fixable,angle,outputs/overlays/20261015_A4_1_30_overlay.jpg,
+20261015_A4_1_50_1.jpg,good,,outputs/overlays/20261015_A4_1_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A4_1_50_2.jpg,good,,outputs/overlays/20261015_A4_1_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_A4_2_30.jpg,good,,outputs/overlays/20261015_A4_2_30_overlay.jpg,
+20261015_A4_2_50_1.jpg,bad,outline,outputs/overlays/20261015_A4_2_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_A4_2_50_2.jpg,good,,outputs/overlays/20261015_A4_2_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B1_1_20.jpg,bad,baseline,outputs/overlays/20261015_B1_1_20_overlay.jpg,
+20261015_B1_1_30_1.jpg,bad,baseline,outputs/overlays/20261015_B1_1_30_1_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B1_1_30_2.jpg,bad,baseline,outputs/overlays/20261015_B1_1_30_2_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B1_1_50.jpg,bad,baseline outline,outputs/overlays/20261015_B1_1_50_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B1_2_30.jpg,good,,outputs/overlays/20261015_B1_2_30_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B2_1_20.jpg,bad,baseline outline,outputs/overlays/20261015_B2_1_20_overlay.jpg,implausible circle angle (3.1) - likely bad
+20261015_B2_1_30_1.jpg,bad,failed,outputs/overlays/20261015_B2_1_30_1_overlay.jpg,classical FAILED - likely bad
+20261015_B2_1_30_2.jpg,bad,baseline outline orientation,outputs/overlays/20261015_B2_1_30_2_overlay.jpg,L/R disagree >15 deg
+20261015_B2_1_30_3.jpg,bad,everything,outputs/overlays/20261015_B2_1_30_3_overlay.jpg,implausible circle angle (180.0) - likely bad
+20261015_B2_1_50.jpg,bad,baseline,outputs/overlays/20261015_B2_1_50_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B2_2_20.jpg,bad,baseline orientation,outputs/overlays/20261015_B2_2_20_overlay.jpg,
+20261015_B2_2_30_1.jpg,bad,baseline orientation,outputs/overlays/20261015_B2_2_30_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B2_2_30_2.jpg,bad,baseline orientation,outputs/overlays/20261015_B2_2_30_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B2_2_50_1.jpg,bad,orientation,outputs/overlays/20261015_B2_2_50_1_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B2_2_50_2.jpg,bad,failed,outputs/overlays/20261015_B2_2_50_2_overlay.jpg,classical FAILED - likely bad
+20261015_B3_1_20.jpg,bad,everything,outputs/overlays/20261015_B3_1_20_overlay.jpg,implausible circle angle (1.0) - likely bad
+20261015_B3_1_30_1.jpg,bad,baseline,outputs/overlays/20261015_B3_1_30_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B3_1_30_2.jpg,bad,baseline,outputs/overlays/20261015_B3_1_30_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B3_1_50_1.jpg,good,,outputs/overlays/20261015_B3_1_50_1_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B3_1_50_2.jpg,bad,outline angle,outputs/overlays/20261015_B3_1_50_2_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B3_2_20.jpg,bad,baseline angle,outputs/overlays/20261015_B3_2_20_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B3_2_30_1.jpg,good,,outputs/overlays/20261015_B3_2_30_1_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B3_2_30_2.jpg,bad,everything,outputs/overlays/20261015_B3_2_30_2_overlay.jpg,implausible circle angle (1.6) - likely bad
+20261015_B3_2_50_1.jpg,good,,outputs/overlays/20261015_B3_2_50_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B3_2_50_2.jpg,fixable,baseline,outputs/overlays/20261015_B3_2_50_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B4_1_20.jpg,fixable,baseline,outputs/overlays/20261015_B4_1_20_overlay.jpg,
+20261015_B4_1_30_1.jpg,good,,outputs/overlays/20261015_B4_1_30_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B4_1_30_2.jpg,good,,outputs/overlays/20261015_B4_1_30_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B4_1_50_1.jpg,fixable,orientation baseline,outputs/overlays/20261015_B4_1_50_1_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B4_1_50_2.jpg,fixable,baseline,outputs/overlays/20261015_B4_1_50_2_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B4_2_20.jpg,bad,everything,outputs/overlays/20261015_B4_2_20_overlay.jpg,implausible circle angle (3.0) - likely bad
+20261015_B4_2_30_1.jpg,bad,baseline angle,outputs/overlays/20261015_B4_2_30_1_overlay.jpg,left contact out of frame; circle fitted to partial arc
+20261015_B4_2_30_2.jpg,good,,outputs/overlays/20261015_B4_2_30_2_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B4_2_50_1.jpg,bad,baseline outline,outputs/overlays/20261015_B4_2_50_1_overlay.jpg,right contact out of frame; circle fitted to partial arc
+20261015_B4_2_50_2.jpg,fixable,baseline,outputs/overlays/20261015_B4_2_50_2_overlay.jpg,left contact out of frame; circle fitted to partial arc
