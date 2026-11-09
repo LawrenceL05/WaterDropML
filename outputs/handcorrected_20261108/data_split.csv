@@ -1,0 +1,15 @@
+file,sample_id,split,source_archive,source_member,label_studio_task,duplicate_tasks,filled_hole_pixels
+20261015_A2_1_50_1.jpg,A2_1,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-1-annotation-1-by-1-tag-waterdrop-0.png,1.0,3 5,42
+20261015_A2_1_50_2.jpg,A2_1,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-6-annotation-6-by-1-tag-waterdrop-0.png,6.0,2 4,1284
+20261015_A2_2_50_1.jpg,A2_2,test,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-7-annotation-7-by-1-tag-waterdrop-0.png,7.0,,1
+20261015_A2_2_50_2.jpg,A2_2,test,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-8-annotation-8-by-1-tag-waterdrop-0.png,8.0,,144
+20261015_A3_1_50_1.jpg,A3_1,val,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-9-annotation-9-by-1-tag-waterdrop-0.png,9.0,,19
+20261015_A3_1_50_2.jpg,A3_1,val,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-10-annotation-10-by-1-tag-waterdrop-0.png,10.0,,28
+20261015_A3_2_50_1.jpg,A3_2,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-11-annotation-11-by-1-tag-waterdrop-0.png,11.0,,83
+20261015_A3_2_50_2.jpg,A3_2,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-12-annotation-12-by-1-tag-waterdrop-0.png,12.0,,88
+20261015_A4_1_50_1.jpg,A4_1,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-13-annotation-13-by-1-tag-waterdrop-0.png,13.0,,20
+20261015_A4_1_50_2.jpg,A4_1,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-14-annotation-14-by-1-tag-waterdrop-0.png,14.0,,28
+20261015_A4_2_50_1.jpg,A4_2,train,project-2-at-2026-11-08-23-25-4ff0e352.zip,task-15-annotation-15-by-1-tag-waterdrop-0.png,15.0,,0
+20261015_A1_1_50_1.jpg,A1_1,train,WaterDropML_manual_A1_1_50_1.zip,SegmentationClass/20261015_A1_1_50_1_upright.png,,,0
+20261015_A1_2_50_2.jpg,A1_2,train,WaterDropML_manual_A1_2_50_2.zip,SegmentationClass/20261015_A1_2_50_2_upright.png,,,0
+20261015_A3_1_30.jpg,A3_1,val,WaterDropML_manual_A3_1_30.zip,SegmentationClass/20261015_A3_1_30_upright.png,,,0

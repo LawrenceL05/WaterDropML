@@ -7,6 +7,9 @@ v1.0 is a **classical computer-vision baseline**. It measures every image, and
 the droplet masks it saves provide a comparison for U-Net segmentation. A first
 corrected-label U-Net pilot completed on 2026-11-08; see the
 [pilot results and training instructions](outputs/corrected_pilot_20261108/README.md).
+A follow-up trained on nine hand-corrected images and reached **95.91% mean test
+IoU** on two views of one held-out droplet. See the
+[expanded training results](outputs/handcorrected_20261108/README.md).
 
 ---
 
@@ -176,7 +179,7 @@ print(r.theta_circle, r.theta_left, r.theta_right, r.notes)
 
 ---
 
-## 5. U-Net segmentation (initial pilot completed)
+## 5. U-Net segmentation
 
 > **Hands-on instructions and commands:** see [`docs/UNET_GUIDE.md`](docs/UNET_GUIDE.md).
 
@@ -194,8 +197,12 @@ v1.0 is the classical pipeline. The initial U-Net pilot trained on two corrected
 A1 images and validated on one A3 image, reaching 97.39% validation IoU versus
 97.19% for the classical mask. This is a small pilot without an independent test
 set or contact-angle validation; it does not yet justify replacing v1.0.
-The trained checkpoint remains local; result artifacts and corrected masks are
-included in the repository. The classical masks in
+The [expanded hand-corrected run](outputs/handcorrected_20261108/README.md)
+used separate training, validation, and test droplets. It reached 96.13% mean
+validation IoU and 95.91% mean test IoU, with a mean test boundary distance of
+12.51 full-resolution pixels. The test set covers one droplet.
+
+The classical masks in
 `data/masks_auto/` are the starting point for U-Net training labels. Some of them
 trace the droplet's outer edge incorrectly, and a U-Net trained on those would
 learn the same mistakes. The masks therefore have to be checked and corrected
